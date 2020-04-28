@@ -152,8 +152,7 @@
       <TimeStamp>0.3.0.0</TimeStamp>
     </Inf>
     <PostBuildEvent>
-      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) $(SolutionDir)/driver/usbip_test.pfx
-</Command>
+      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) "$(CertName)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -172,8 +171,7 @@
       <TimeStamp>0.3.0.0</TimeStamp>
     </Inf>
     <PostBuildEvent>
-      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) $(SolutionDir)/driver/usbip_test.pfx
-</Command>
+      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) "$(CertName)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -196,8 +194,7 @@
       <FileDigestAlgorithm>sha256</FileDigestAlgorithm>
     </DriverSign>
     <PostBuildEvent>
-      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) $(SolutionDir)/driver/usbip_test.pfx
-</Command>
+      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) "$(CertName)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -220,8 +217,7 @@
       <FileDigestAlgorithm>sha256</FileDigestAlgorithm>
     </DriverSign>
     <PostBuildEvent>
-      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) $(SolutionDir)/driver/usbip_test.pfx
-</Command>
+      <Command>gencat.bat $(OutDir) 10_$(DDKPlatform) "$(CertName)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
